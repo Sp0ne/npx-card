@@ -8,5 +8,5 @@
     "github": "Sp0ne",
     "bitbucket": "Sp0ne",
     "steam": "sp0ne-",
-    "npx_card_handle": "@vinces/card"
+    "npx": "@vinces/card",
 }
