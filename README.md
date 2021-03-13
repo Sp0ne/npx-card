@@ -50,7 +50,7 @@ Edit the `./config.json` with your params and:
 
 [vinces]: https://vinces.io
 [sp0ne]: https://github.com/sp0ne/npx-card 
-[card]: img/npx-card.png
+[card]: img/npx-card.gif
 [a098]: https://github.com/anmol098/npx_card 
 [brga]: https://github.com/bradgarropy/business-card 
 [arti]: https://medium.com/@natterstefan/how-to-create-your-personal-npm-business-card-816dfc66ca8
