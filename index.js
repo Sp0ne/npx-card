@@ -1,57 +1,54 @@
 #!/usr/bin/env node
 
-// Require lib
+// Require conf & lib
+const { info, links, style } = require("./config.json")
 const boxen = require('boxen');
 const chalk = require('chalk');
 
 // Define options for Boxen
 const options = {
-  padding: 1,
-  margin: 1,
+  padding: style.padding,
+  margin: style.margin,
   float: 'left',
-  borderStyle: 'single',
-  borderColor: 'black',
-  backgroundColor: 'black'
+  borderStyle: style.borderStyle,
+  borderColor: style.borderColor,
+  backgroundColor: style.backgroundColor
 };
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('Hey, i\'m Vinces (Sp0ne)'),
-  handle: chalk.cyan('👋'),
-  work: chalk.white('Passionate Frenchie 🇫🇷 Full stack developer'),
-  web: chalk.cyan('https://vinces.io'),
-  studio: chalk.cyan('https://in2com.fr'),
-  github: chalk.cyan('https://github.com/Sp0ne'),
-  linkedin: chalk.cyan('https://www.linkedin.com/in/vinces-'),
-  npx: chalk.white('npx @vinces/card'),
-  labelWork: chalk.white.bold('      Work:'),
-  labelWeb: chalk.white.bold('       Web:'),
-  labelStudio: chalk.white.bold('   Studio:'),
-  labelGitHub: chalk.white.bold('    GitHub:'),
-  labelLinkedIn: chalk.white.bold('  LinkedIn:'),
-  labelCard: chalk.white.bold('      Card:'),
+  name: chalk.whiteBright.bold('Hey, i\'m ') + chalk.black.bgGreenBright.bold(info.name),
+  aka: chalk.white(info.aka),
+  handle: chalk.white(info.handle),
+  job: chalk.green.italic(info.job),
+  npx: chalk.cyan(info.npx),
+  labelCard: chalk.white.bold("       Card:")
 };
 
 // Actual strings we're going to output
 const newline = '\n';
-const heading = `${data.name} ${data.handle}`;
-const working = `${data.labelWork}  ${data.work}`;
-const studioing = `${data.labelStudio}  ${data.studio}`;
-const githubing = `${data.labelGitHub}  ${data.github}`;
-const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`;
-const webing = `${data.labelWeb}  ${data.web}`;
-const carding = `${data.labelCard}  ${data.npx}`;
 
 // Put all our output together into a single variable so we can use boxen effectively
-const output = heading + newline
-  + newline
-  + webing + newline
-  + working + newline
-  + studioing + newline
-  + githubing + newline
-  + linkedining + newline
-  + newline
-  + carding;
+const output = boxen([
+  `${data.name} ${data.aka} ${data.handle}`,
+  "",
+  `${data.job}`,
+  "",
+  ...links.map(link => {
+    return chalk.white.bold(link.name) + '   ' + chalk.grey('https://') + chalk.white(link.url)
+  }),
+  "",
+  `${data.labelCard}  ${data.npx}`
+].join(newline), options)
 
-const cardMessage = chalk.green(boxen(output, options));
-console.log(cardMessage);
+console.log(output);
+
+const tip = [
+    `   ${chalk.grey.italic("Tip: ")} ${chalk.blue.italic("cmd/ctrl + click")} ${chalk.grey.italic("on the links above")}`,
+    '',
+    `   ${chalk.grey.italic("</> with ❤ by")} ${chalk.magenta.italic("@Sp0ne")}`,
+    '',
+].join("\n");
+
+console.log(tip);
+

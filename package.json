@@ -1,20 +1,29 @@
 {
   "name": "vinces",
-  "version": "1.0.0",
+  "version": "0.1.2",
   "description": "A personal card for Vinces (Sp0ne)",
-  "main": "index.js",
-  "bin": "./index.js",
+  "keywords": [
+    "npm",
+    "npx",
+    "chalk",
+    "parcel",
+    "business-card"
+  ],
+  "homepage": "https://github.com/sp0ne/npx-card",
+  "license": "MIT",
+  "author": {
+    "name": "Vinces",
+    "url": "https://vinces.io"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/sp0ne/npx-card"
   },
+  "main": "index.js",
+  "bin": "./index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "keywords": [],
-  "author": "Vinces (https://vinces.io)",
-  "license": "MIT",
   "dependencies": {
     "boxen": "^2.1.0",
     "chalk": "^2.4.1",

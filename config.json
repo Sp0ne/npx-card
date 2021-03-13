@@ -1,0 +1,25 @@
+{
+    "info": {
+        "name": " Vinces ",
+        "aka": "(Sp0ne)",
+        "handle": "\uD83D\uDC4B",
+        "npx": "npx vinces",
+        "job": "➜ Passionate Frenchie Full-stack Developer"
+    },
+    "links": [
+        { "name": "       Web:", "url": "vinces.io" },
+        { "name": "    Studio:", "url": "in2com.fr" },
+        { "name": "  LinkedIn:", "url": "linkedin.com/in/vinces-" },
+        { "name": "    GitHub:", "url": "github.com/Sp0ne" },
+        { "name": " Bitbucket:", "url": "bitbucket.org/Sp0ne" },
+        { "name": "       Npm:", "url": "npmjs.com/~sp0ne" },
+        { "name": "     Steam:", "url": "steamcommunity.com/id/sp0ne-" }
+    ],
+    "style": {
+        "borderStyle": "single",
+        "borderColor": "green",
+        "backgroundColor": "",
+        "padding": 2,
+        "margin": 1
+    }
+}
