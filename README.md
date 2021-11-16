@@ -38,13 +38,12 @@ Edit the `./config.json` with your params and:
 
 ### 🍭 Credit
 
-✨ inspired by [anmol][a098] and [brad garropy][brga]  
-📖 accomplished with the help of this [article][arti]
+📖 inspired by [anmol][a098], [brad garropy][brga] and accomplished with the help of this [article][arti]
 
 ### 🎁 Support Me
 
-- Buy me a coffee: [@vinces][bmac]
-- Paypal: [@vincesio][ppal]
+Buy me a coffee: [@vinces][bmac]  
+Paypal: [@vincesio][ppal]
 
 > _💻 with ❤ by [@Sp0ne][vinces]. Have Fun 🍻_
 

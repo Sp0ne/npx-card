@@ -9,11 +9,12 @@
     "links": [
         { "name": "       Web:", "url": "vinces.io" },
         { "name": "    Studio:", "url": "in2com.fr" },
-        { "name": "  LinkedIn:", "url": "linkedin.com/in/vinces-" },
+        { "name": "  LinkedIn:", "url": "linkedin.com/in/vince-s" },
         { "name": "    GitHub:", "url": "github.com/Sp0ne" },
         { "name": " Bitbucket:", "url": "bitbucket.org/Sp0ne" },
         { "name": "       Npm:", "url": "npmjs.com/~sp0ne" },
-        { "name": "     Steam:", "url": "steamcommunity.com/id/sp0ne-" }
+        { "name": "   Codepen:", "url": "codepen.io/Sp0ne" },
+        { "name": "     Steam:", "url": "steamcommunity.com/id/-Sp0ne" }
     ],
     "style": {
         "borderStyle": "single",

@@ -44,8 +44,7 @@ const output = boxen([
 console.log(output);
 
 const tip = [
-    `   ${chalk.grey.italic("Tip: ")} ${chalk.blue.italic("cmd/ctrl + click")} ${chalk.grey.italic("on the links above")}`,
-    '',
+    `   ${chalk.grey.italic("Tip: ")} ${chalk.blue.italic("ctrl/cmd + click")} ${chalk.grey.italic("on the links above")}`,
     `   ${chalk.grey.italic("</> with ❤ by")} ${chalk.magenta.italic("@Sp0ne")}`,
     '',
 ].join("\n");
