@@ -25,7 +25,7 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "boxen": "^2.1.0",
+    "boxen": "^8.0.1",
     "chalk": "^2.4.1",
     "clear": "^0.1.0"
   },
